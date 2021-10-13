@@ -1,5 +1,8 @@
-const Nav = () => {
-  const navSections = ["About me", "Portfolio", "Contact", "Resume"];
+const Nav = (props) => {
+  const {
+    setCurrentSection,
+    currentSection,
+} = props;
 
   return (
     <nav>
@@ -9,7 +12,7 @@ const Nav = () => {
             <a
               href={"#" & section.toLowerCase()}
               onClick={() => {
-                renderPage(section);
+                setCurrentSection(section);
               }}
               className={
                 currentSection === section ? "nav-link navActive" : "nav-link"

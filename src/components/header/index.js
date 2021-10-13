@@ -12,10 +12,10 @@ const Header = (props) => {
 
   return (
     <header>
-      <div className="header-container">
+      <section className="header-container">
         <div className="heading">Meghan Bock</div>
         <div className="sub-heading"></div>
-      </div>
+      </section>
       <Nav
         navSections={navSections}
         setCurrentSection={setCurrentSection}

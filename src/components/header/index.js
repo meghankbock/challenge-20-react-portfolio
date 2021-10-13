@@ -16,11 +16,13 @@ const Header = (props) => {
         <div className="heading">Meghan Bock</div>
         <div className="sub-heading"></div>
       </div>
-      <Nav 
-      navSections={navSections}
-      setCurrentSection={setCurrentSection}
-      currentCategory={curr}
-      currentSection={props}></Nav>
+      <Nav
+        navSections={navSections}
+        setCurrentSection={setCurrentSection}
+        currentSection={currentSection}
+      ></Nav>
     </header>
   );
 };
+
+export default Header;

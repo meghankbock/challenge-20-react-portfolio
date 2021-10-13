@@ -1,8 +1,5 @@
 const Nav = (props) => {
-  const {
-    setCurrentSection,
-    currentSection,
-} = props;
+  const { navSections, setCurrentSection, currentSection } = props;
 
   return (
     <nav>
@@ -15,7 +12,7 @@ const Nav = (props) => {
                 setCurrentSection(section);
               }}
               className={
-                currentSection === section ? "nav-link navActive" : "nav-link"
+                currentSection === section ? "nav-link nav-active" : "nav-link"
               }
             >
               {section}

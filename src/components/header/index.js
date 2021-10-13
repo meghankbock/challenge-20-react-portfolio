@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "../nav";
+import Nav from "../Nav";
 
 const Header = (props) => {
   const [navSections] = useState([

@@ -6,6 +6,7 @@ const projects = [
         date: "",
         langauges: "",
         image: "",
+        imageDescription: "",
         githubUrl: "",
         deployedUrl: ""
     },
@@ -16,6 +17,7 @@ const projects = [
         date: "",
         langauges: "",
         image: "",
+        imageDescription: "",
         githubUrl: "",
         deployedUrl: ""
     },
@@ -26,6 +28,7 @@ const projects = [
         date: "",
         langauges: "",
         image: "",
+        imageDescription: "",
         githubUrl: "",
         deployedUrl: ""
     },
@@ -36,6 +39,7 @@ const projects = [
         date: "",
         langauges: "",
         image: "",
+        imageDescription: "",
         githubUrl: "",
         deployedUrl: ""
     },
@@ -46,6 +50,7 @@ const projects = [
         date: "",
         langauges: "",
         image: "",
+        imageDescription: "",
         githubUrl: "",
         deployedUrl: ""
     },
@@ -56,9 +61,10 @@ const projects = [
         date: "",
         langauges: "",
         image: "",
+        imageDescription: "",
         githubUrl: "",
         deployedUrl: ""
     }
 ];
 
-export { projects };
+export default projects;

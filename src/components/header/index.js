@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import Nav from "../Nav";
 
 const Header = (props) => {
-const [currentSection, setCurrentSection] = useState(navSections[0]);
-const { navSections, currentSection, setCurrentSection } = props;
 
   return (
     <header>
@@ -12,9 +9,9 @@ const { navSections, currentSection, setCurrentSection } = props;
         <h2 className="sub-heading"></h2>
       </section>
       <Nav
-        navSections={navSections}
-        setCurrentSection={setCurrentSection}
-        currentSection={currentSection}
+        navSections={props.navSections}
+        setCurrentSection={props.setCurrentSection}
+        currentSection={props.currentSection}
       ></Nav>
     </header>
   );

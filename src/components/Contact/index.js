@@ -25,12 +25,12 @@ const Contact = () => {
       '/^(([^<>()[]\\.,;:s@"]+(.[^<>()[]\\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/'
     );
 
-    if (name == "first name" || name == "last name") {
+    if (name === "first name" || name === "last name") {
       if (!value) {
         setErrorMessage(`Please provide your ${name}`);
         return errorMessage;
       }
-    } else if (name == "email" && !regex.value) {
+    } else if (name === "email" && !regex.value) {
       setErrorMessage("Please enter a valid email address.");
       return errorMessage;
     }
@@ -48,8 +48,8 @@ const Contact = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    message = {
-      from: { $email },
+    let message = {
+      from: formState.email,
       to: process.env.EMAIL,
       subject: `Greetings from ${formState.firstName}`,
       text: `A message from ${formState.firstName} ${formState.lastName}: ${formState.message}`,
@@ -71,7 +71,7 @@ const Contact = () => {
       </span>
       <form className="contact-form" onSubmit={handleFormSubmit}>
         <div>
-          <label className="form-label" for="first name">
+          <label className="form-label" htmlFor="first name">
             First Name:
           </label>
           <input
@@ -83,7 +83,7 @@ const Contact = () => {
           ></input>
         </div>
         <div>
-          <label className="form-label" for="last name">
+          <label className="form-label" htmlFor="last name">
             Last Name:
           </label>
           <input
@@ -95,7 +95,7 @@ const Contact = () => {
           ></input>
         </div>
         <div>
-          <label className="form-label" for="email">
+          <label className="form-label" htmlFor="email">
             Email:
           </label>
           <input
@@ -107,7 +107,7 @@ const Contact = () => {
           ></input>
         </div>
         <div>
-          <label className="form-label" for="message">
+          <label className="form-label" htmlFor="message">
             Message:
           </label>
           <input

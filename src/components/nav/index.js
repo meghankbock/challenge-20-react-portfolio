@@ -1,5 +1,5 @@
 const Nav = (props) => {
-  const { navSections, setCurrentSection, currentSection } = props;
+    const { navSections, setCurrentSection, currentSection } = props;
 
   return (
     <nav>
@@ -7,9 +7,10 @@ const Nav = (props) => {
         {navSections.map((section) => (
           <li className="nav-item" key={section}>
             <a
-              href={"#" & section.toLowerCase().replace(/\s/g, '')}
+              href={["#",section.toLowerCase().replace(/\s/g, '')].join('')}
               onClick={() => {
                 setCurrentSection(section);
+                console.log("section :: ", "#" & section.toLowerCase().replace(/\s/g, ''));
               }}
               className={
                 currentSection === section ? "nav-link nav-active" : "nav-link"

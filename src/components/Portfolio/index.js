@@ -1,5 +1,5 @@
 import Project from "../Project";
-import projects from "../../assets/projects.js";
+import projects from "../../assets/resources/projects";
 
 const Portfolio = () => {
   return (

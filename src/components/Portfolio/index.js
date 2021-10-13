@@ -4,12 +4,10 @@ import projects from "../../assets/resources/projects";
 const Portfolio = () => {
   return (
     <section className="portfolio container">
-      <span className="sub-heading">
-        <h2>Portfolio</h2>
-      </span>
-      <ul className="project-list">
+      <h2 className="primary-section-title">// Portfolio //</h2>
+      <ul className="portfolio-list">
         {projects.map((project) => (
-          <li key={project.id}>
+          <li className="single-project" key={project.id}>
             <Project project={project} />
           </li>
         ))}

@@ -6,6 +6,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import '../src/assets/styles/izmir.css';
 
 function App() {
   const [currentSection, setCurrentSection ] = useState("");

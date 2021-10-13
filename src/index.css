@@ -1,18 +1,18 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
 :root {
-  --green: #07ABA5;
-  --pink: #F73BD0;
-  --teal: #23F7F0;
-  --yellow: #F7CE0A;
-  --gold: #AB900F;
+  --green: #07aba5;
+  --pink: #f73bd0;
+  --teal: #23f7f0;
+  --yellow: #f7ce0a;
+  --gold: #ab900f;
   --white: white;
 }
 
@@ -26,18 +26,14 @@ body {
 header {
   padding-top: 15px;
   padding-left: 30px;
-  padding-bottom: 20px;;
+  padding-bottom: 20px;
   background-color: var(--green);
   /* background: linear-gradient(
     90deg,
     var(--green) 90%,
     var(--green) 95%
   ); */
-  background: linear-gradient(
-    -90deg,
-    #044d4a,
-    var(--green)
-  );
+  background: linear-gradient(-90deg, #044d4a, var(--green));
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -45,10 +41,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 9999;
-  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-header h1{
+header h1 {
   font-weight: 600;
   font-size: 32px;
   color: var(--white);
@@ -62,7 +58,7 @@ header a {
   text-decoration: none;
 }
 
-header nav{
+header nav {
   padding-top: 10px;
   padding-right: 20px;
   display: flex;
@@ -96,10 +92,11 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
-  background-color: var(--green);
+  background: linear-gradient(90deg, #044d4a, var(--green));
   height: 50px;
   align-items: center;
   margin-top: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 footer h2 {
@@ -124,11 +121,11 @@ footer h2 {
 /* IMAGE STYLES */
 img {
   max-width: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* BODY STYLES */
-body{
+body {
   font-family: "Open Sans";
   color: var(--green);
 }
@@ -154,7 +151,7 @@ body{
 .primary-section-title {
   font-size: 30px;
   color: var(--white);
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 40px;
   text-align: center;
   width: 100%;
@@ -181,13 +178,12 @@ body{
   /* background-position: 100%; */
   /* max-height: 80%; */
   min-height: 400px;
-
 }
 
 .about-info {
-  background-color: rgba(245,245,245,0.90);
+  background-color: rgba(245, 245, 245, 0.9);
   border: 2px solid var(--green);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   padding-bottom: 30px;
   margin-bottom: 25px;
@@ -212,27 +208,39 @@ body{
 }
 
 /* WORK STYLES */
+.portfolio-list {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.single-project  {
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  max-width: 500px;
+}
+
 .work-info {
   width: 60%;
 }
 
-.work-item-primary {
-  flex: 12 100%;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
 .work-item-secondary {
   flex: 1 40%;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
-.work-img-container, .resume-img-container {
-  width: 100%;
-  height: 100%;
+.work-img-container,
+.resume-img-container {
   display: inline-flex;
   position: relative;
+}
+
+.project-img {
+  max-width: 5%;
 }
 
 .work-img-container a {
@@ -246,12 +254,12 @@ body{
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); 
-  font-size: 20px;  
-  color: var(--green); 
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--green);
   text-align: center;
   text-decoration: none;
-  background-color: rgba(245,245,245,0.90);
+  background-color: rgba(245, 245, 245, 0.9);
   border: 3px solid var(--yellow);
   padding: 20px 15px;
 }
@@ -274,12 +282,13 @@ body{
   font-weight: bolder;
   text-align: center;
   background-color: black;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
 
 /* CONTACT ME STYLES */
-.contact-item, .contact-item a {
+.contact-item,
+.contact-item a {
   color: var(--green);
   font-size: 24px;
   font-weight: bolder;
@@ -288,7 +297,8 @@ body{
   padding: 10px;
 }
 
-.contact-item:hover, .contact-item:hover a {
+.contact-item:hover,
+.contact-item:hover a {
   color: var(--yellow);
   border-bottom: 2px solid var(--yellow);
   padding: 10px;
@@ -296,108 +306,111 @@ body{
 
 @media screen and (max-width: 980px) {
   header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
   }
 
   header h1 {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
   header nav ul {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      width: 100%;
-      justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
   }
 
   header nav ul li a {
-      font-size: 20px;
+    font-size: 20px;
   }
 
-  footer h2, footer div {
-      text-align: center;
-      width: 100%;
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
   }
 
   section {
-      padding: 10px 10px;
+    padding: 10px 10px;
   }
 
   article {
-      padding: 20px 10px;
+    padding: 20px 10px;
   }
 
   .section-info {
-      width: 75%;
-      padding-bottom: 10px;
+    width: 75%;
+    padding-bottom: 10px;
   }
 
-  .primary-section-title, .secondary-section-title {
-      width: 100%;
+  .primary-section-title,
+  .secondary-section-title {
+    width: 100%;
   }
-  
-  .work-item-primary, .work-item-secondary {
-      flex: 0 100%;
-      margin-bottom: 20px;
+
+  .work-item-primary,
+  .work-item-secondary {
+    flex: 0 100%;
+    margin-bottom: 20px;
   }
 
   .resume-img-container img {
-      max-width: 90%;
-      margin: auto;
+    max-width: 90%;
+    margin: auto;
   }
 
   .contact-item {
-      font-size: 150%;
-      text-align: center;
-      margin-bottom: 20px;
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .contact-item {
-      flex: 0 100%;
+    flex: 0 100%;
   }
-
 }
 
 @media screen and (max-width: 768px) {
   section {
-      padding: 5px 10px;
+    padding: 5px 10px;
   }
 
   article {
-      padding: 10px 10px;
+    padding: 10px 10px;
   }
-  
-  .bio-img, .bio-text {
-      flex: 0 80%;
-      padding: 20px 10px;
-      margin-left: auto;
-      margin-right: 0;
-      align-items: center;
+
+  .bio-img,
+  .bio-text {
+    flex: 0 80%;
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center;
   }
   .bio-text {
-      flex: 0 100%;
-      text-align: center;
-      line-height: 1.2;
+    flex: 0 100%;
+    text-align: center;
+    line-height: 1.2;
   }
 
   .bio-img img {
-      max-width: 70%;
+    max-width: 70%;
   }
 }
 
 @media screen and (max-width: 575px) {
   section {
-      padding: 0 10px;
+    padding: 0 10px;
   }
 
   article {
-      padding: 5px 10px;
+    padding: 5px 10px;
   }
 
   .contact-item {
-      padding: 5px;
+    padding: 5px;
   }
 }

@@ -1,24 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume'
 
 function App() {
+  const [currentSection, setCurrentSection ] = useState("About Me");
+  const [navSections] = useState([
+    "About Me",
+    "Portfolio",
+    "Contact",
+    "Resume",
+  ]);
+
+  const displaySection = () => {
+    if (currentSection == "About Me") {
+      return <About />
+    } else if (currentSection == "Portfolio") {
+      return <Portfolio />
+    } else if (currentSection == "Resume") {
+      return <Resume />
+    } else if (currentSection == "Contact" ) {
+      return <Contact />
+    } else {
+      return <About />
+    }
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header currentSection={currentSection} setCurrentSection={setCurrentSection} navSections={navSections} />
+      <main>
+        {displaySection()}
+      </main>
+    <Footer />
+    </>
   );
 }
 

@@ -3,11 +3,11 @@ const Nav = (props) => {
 
   return (
     <nav>
-      <ul className="nav-container">
+      <ul className="nav-list">
         {navSections.map((section) => (
           <li className="nav-item" key={section}>
             <a
-              href={"#" & section.toLowerCase()}
+              href={"#" & section.toLowerCase().replace(/\s/g, '')}
               onClick={() => {
                 setCurrentSection(section);
               }}

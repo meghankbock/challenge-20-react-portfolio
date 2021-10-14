@@ -382,6 +382,7 @@ body {
 .resume-details iframe {
   width: 75%;
   height: 1000px;
+  padding-left: 60px;
 }
 
 

@@ -234,18 +234,34 @@ body {
 /* WORK STYLES */
 .portfolio-list {
   display: flex;
+  flex-direction: column;
+  align-content: space-around;
   align-items: flex-end;
   flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 .single-project  {
   display: flex;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-evenly;
-  max-width: 500px;
+  max-width: 600px;
+}
+
+.single-project a {
+  color: #044d4a;
+}
+
+.single-project p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.single-project span {
+  font-weight: 700;
 }
 
 .work-info {

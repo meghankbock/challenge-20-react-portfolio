@@ -13,13 +13,12 @@ const Project = ({ project }) => {
         />
         <figcaption className="c4-layout-bottom-left">
           <div className="c4-reveal-right c4-delay-100">
-            <h3>{project.title}</h3>
-            <a href={project.githubUrl}>GitHub Repository</a>
-            <a href={project.deployedUrl}>Deployed Application</a>
+            <h2>{project.title}</h2>
             <div className="project-text">
-              <span className="project-title">{project.title}</span>
-              <p>{project.date}</p>
-              <p>{project.description}</p>
+            <p><span>Links: </span><a href={project.githubUrl} target="_blank">GitHub Repository</a> // <a href={project.deployedUrl} target="_blank">Deployed Application</a></p>
+              <p><span>Languages/Tools:</span> {project.languages}</p>
+              <p><span>Description:</span> {project.description}</p>
+              <p><span>Date:</span> {project.date}</p>
             </div>
           </div>
         </figcaption>

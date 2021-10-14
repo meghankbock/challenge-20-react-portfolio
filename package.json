@@ -2,7 +2,7 @@
   "name": "challenge-20-react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https//meghankbock.github.io/challenge-20-react-portfolio",
+  "homepage": "https://meghankbock.github.io/challenge-20-react-portfolio/",
   "dependencies": {
     "@ciar4n/izmir": "^1.0.1",
     "@testing-library/jest-dom": "^5.14.1",

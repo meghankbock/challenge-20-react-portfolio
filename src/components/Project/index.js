@@ -8,7 +8,7 @@ const Project = ({ project }) => {
         tabindex="0"
       >
         <img className="project-img"
-          src={require(`../../assets/images/screenshot-${project.id}.PNG`).default}
+          src={require(`../../assets/images/screenshot-${project.key}.PNG`).default}
           alt={project.imageDescription}
         />
         <figcaption className="c4-layout-bottom-left">

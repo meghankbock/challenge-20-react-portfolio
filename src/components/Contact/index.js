@@ -65,10 +65,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-container flex-row about-container">
+    <section className="contact-container flex-row">
       <h2 className="primary-section-title">// Contact //</h2>
       <form
-        className="contact-form flex-row section-info about-info"
+        className="contact-form flex-row"
         onSubmit={handleFormSubmit}
       >
         <div>
@@ -119,7 +119,9 @@ const Contact = () => {
             onBlur={handleChange}
           ></textarea>
         </div>
+        <div>
         <button type="submit">Submit</button>
+        </div>
       </form>
     </section>
   );

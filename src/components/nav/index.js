@@ -13,7 +13,7 @@ const Nav = (props) => {
                 console.log("section :: ", "#" & section.toLowerCase().replace(/\s/g, ''));
               }}
               className={
-                currentSection === section ? "nav-link nav-active" : "nav-link"
+                currentSection === section ? "nav-active" : "nav-inactive"
               }
             >
               {section}

@@ -9,7 +9,7 @@ import Resume from './components/Resume';
 import '../src/assets/styles/izmir.css';
 
 function App() {
-  const [currentSection, setCurrentSection ] = useState("");
+  const [currentSection, setCurrentSection ] = useState("About Me");
   const [navSections] = useState([
     "About Me",
     "Portfolio",

@@ -86,6 +86,14 @@ header nav ul li a:hover {
   border-bottom: 2px solid var(--green);
 }
 
+.nav-active {
+  border-bottom: 2px solid var(--green);
+}
+
+.nav-inactive {
+  border-bottom: none;
+}
+
 /* FOOTER STYLES */
 footer {
   display: flex;

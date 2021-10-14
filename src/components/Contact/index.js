@@ -55,13 +55,11 @@ const Contact = () => {
       text: `A message from ${formState.firstName} ${formState.lastName}: ${formState.message}`,
     };
 
-    transporter.sendEmail(message, function (err, info) {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log(info);
-      }
-    });
+    try {
+      transporter.sendEmail(message)
+    } catch(e) {
+      console.log("::FORM HANDLING WILL BE SET UP AT A LATER TIME:::");
+    }
   };
 
   return (

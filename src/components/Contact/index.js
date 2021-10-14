@@ -65,17 +65,18 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-container">
-      <span>
-        <h2>Contact Me</h2>
-      </span>
-      <form className="contact-form" onSubmit={handleFormSubmit}>
+    <section className="contact-container flex-row about-container">
+      <h2 className="primary-section-title">// Contact //</h2>
+      <form
+        className="contact-form flex-row section-info about-info"
+        onSubmit={handleFormSubmit}
+      >
         <div>
-          <label className="form-label" htmlFor="first name">
+        <div>
+          <label htmlFor="first name">
             First Name:
           </label>
           <input
-            className="form-input"
             type="text"
             id="firstName"
             name="first name"
@@ -83,11 +84,10 @@ const Contact = () => {
           ></input>
         </div>
         <div>
-          <label className="form-label" htmlFor="last name">
+          <label htmlFor="last name">
             Last Name:
           </label>
           <input
-            className="form-input"
             type="text"
             id="lastName"
             name="last name"
@@ -95,28 +95,29 @@ const Contact = () => {
           ></input>
         </div>
         <div>
-          <label className="form-label" htmlFor="email">
+          <label htmlFor="email">
             Email:
           </label>
           <input
-            className="form-input"
             type="text"
             id="email"
             name="email"
             onBlur={handleChange}
           ></input>
         </div>
+        </div>
         <div>
-          <label className="form-label" htmlFor="message">
+          <label htmlFor="message">
             Message:
           </label>
-          <input
-            className="form-input"
-            type="text"
+          <textarea
             id="message"
+            type="text"
             name="message"
+            rows="8"
+            columns="40"
             onBlur={handleChange}
-          ></input>
+          ></textarea>
         </div>
         <button type="submit">Submit</button>
       </form>

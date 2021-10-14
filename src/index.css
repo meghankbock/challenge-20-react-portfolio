@@ -297,12 +297,48 @@ body {
   padding: 10px;
 }
 
-.contact-item:hover,
+/* .contact-item:hover,
 .contact-item:hover a {
   color: var(--yellow);
   border-bottom: 2px solid var(--yellow);
-  padding: 10px;
+} */
+
+.contact-form {
+  max-width: 50%;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
+
+.contact-form input, textarea {
+  border: 1px solid var(--green);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--green);
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.75);
+}
+
+.contact-form label {
+  margin: 0 5px;
+}
+
+.contact-form button:hover {
+  background-color: var(--yellow);
+}
+
+.contact-form button {
+  color: white;
+  background-color: var(--green);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
 
 @media screen and (max-width: 980px) {
   header {

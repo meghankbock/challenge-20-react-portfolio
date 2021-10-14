@@ -339,6 +339,12 @@ body {
   padding-top: 10px;
 }
 
+.resume-details iframe {
+  width: 50%;
+  height: 500px;
+  align-items: flex-start;
+}
+
 
 @media screen and (max-width: 980px) {
   header {

@@ -348,9 +348,8 @@ body {
 }
 
 .resume-details iframe {
-  width: 50%;
-  height: 500px;
-  align-items: flex-start;
+  width: 75%;
+  height: 1000px;
 }
 
 

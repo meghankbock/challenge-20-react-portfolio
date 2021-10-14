@@ -1,4 +1,4 @@
-import "./izmir.css";
+require('../../assets/styles/izmir.css');
 
 const Project = ({ project }) => { 
   return (

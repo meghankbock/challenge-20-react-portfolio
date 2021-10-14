@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b71f7d1.chunk.css",
-    "main.js": "/static/js/main.8b087078.chunk.js",
-    "main.js.map": "/static/js/main.8b087078.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.495bbc5d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.495bbc5d.js.map",
-    "static/js/2.2d0d09e9.chunk.js": "/static/js/2.2d0d09e9.chunk.js",
-    "static/js/2.2d0d09e9.chunk.js.map": "/static/js/2.2d0d09e9.chunk.js.map",
-    "static/js/3.8a310a9a.chunk.js": "/static/js/3.8a310a9a.chunk.js",
-    "static/js/3.8a310a9a.chunk.js.map": "/static/js/3.8a310a9a.chunk.js.map",
+    "main.css": "/static/css/main.f64acbe5.chunk.css",
+    "main.js": "/static/js/main.0bb571c3.chunk.js",
+    "main.js.map": "/static/js/main.0bb571c3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fa60ab69.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fa60ab69.js.map",
+    "static/js/2.0c20dc4c.chunk.js": "/static/js/2.0c20dc4c.chunk.js",
+    "static/js/2.0c20dc4c.chunk.js.map": "/static/js/2.0c20dc4c.chunk.js.map",
+    "static/js/3.a8b7bdb9.chunk.js": "/static/js/3.a8b7bdb9.chunk.js",
+    "static/js/3.a8b7bdb9.chunk.js.map": "/static/js/3.a8b7bdb9.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6b71f7d1.chunk.css.map": "/static/css/main.6b71f7d1.chunk.css.map",
-    "static/js/2.2d0d09e9.chunk.js.LICENSE.txt": "/static/js/2.2d0d09e9.chunk.js.LICENSE.txt",
+    "static/css/main.f64acbe5.chunk.css.map": "/static/css/main.f64acbe5.chunk.css.map",
+    "static/js/2.0c20dc4c.chunk.js.LICENSE.txt": "/static/js/2.0c20dc4c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/background-multi-color-wood.e93a81ea.jpg",
     "static/media/mb_small.c945b1e9.png": "/static/media/mb_small.c945b1e9.png",
     "static/media/screenshot-book-search-engine.PNG": "/static/media/screenshot-book-search-engine.fdc397a9.PNG",
@@ -23,9 +23,9 @@
     "static/media/screenshot-taste-of-the-day.PNG": "/static/media/screenshot-taste-of-the-day.57c46be4.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.495bbc5d.js",
-    "static/js/2.2d0d09e9.chunk.js",
-    "static/css/main.6b71f7d1.chunk.css",
-    "static/js/main.8b087078.chunk.js"
+    "static/js/runtime-main.fa60ab69.js",
+    "static/js/2.0c20dc4c.chunk.js",
+    "static/css/main.f64acbe5.chunk.css",
+    "static/js/main.0bb571c3.chunk.js"
   ]
 }

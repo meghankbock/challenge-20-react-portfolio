@@ -91,9 +91,6 @@ header nav ul li a:hover {
 
 /* FOOTER STYLES */
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   text-align: center;
   background: linear-gradient(90deg, #044d4a, var(--green));
   height: 50px;
@@ -114,10 +111,11 @@ footer h2 {
 footer ul,
 li {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  align-content: center;
   text-decoration: none;
-  padding: 0 5px;
+  padding: 5px 10px;
 }
 
 footer li,

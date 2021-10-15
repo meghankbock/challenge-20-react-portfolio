@@ -119,7 +119,7 @@ li {
   align-items: center;
   align-content: center;
   text-decoration: none;
-  padding: 5px 10px;
+  padding-bottom: 20px;
 }
 
 footer li,
@@ -228,6 +228,10 @@ body {
 }
 
 /* PORTFOLIO/PROJECT STYLES */
+.portfolio-container {
+  padding-bottom: 30px;
+}
+
 .portfolio-list {
   display: flex;
   flex-direction: column;

@@ -95,7 +95,7 @@ footer {
   background: linear-gradient(90deg, #044d4a, var(--green));
   height: 50px;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 60px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   position: fixed;
   padding: 10px 10px 0px 10px;
@@ -244,7 +244,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-evenly;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .single-project a {

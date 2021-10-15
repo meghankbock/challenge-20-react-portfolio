@@ -6,10 +6,10 @@ const projects = [
         description: "Front and back-end app designed for pet owners and their furry friends.",
         date: "October 2021",
         languages: "Node.js // Express.js // MongoDB // Mongoose // GraphQL",
-        image: "../../src/assets/images/Portfolio-Screenshot-broadcastr.PNG",
-        imageDescription: "Screenshot of broadcastr website",
-        githubUrl: "https://github.com/meghankbock/broadcastr",
-        deployedUrl: "https://boiling-fortress-30456.herokuapp.com/"
+        image: "../../src/assets/images/Portfolio-Screenshot-pet-planit.PNG",
+        imageDescription: "Screenshot of PET PLANiT website",
+        githubUrl: "https://github.com/dpbam/pet-social-network",
+        deployedUrl: "https://enigmatic-temple-75821.herokuapp.com/"
     },
     {
         id: 2,

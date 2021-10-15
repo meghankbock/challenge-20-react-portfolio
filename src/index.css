@@ -93,7 +93,7 @@ header nav ul li a:hover {
 footer {
   text-align: center;
   background: linear-gradient(90deg, #044d4a, var(--green));
-  height: 50px;
+  height: 40px;
   align-items: center;
   margin-top: 60px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);

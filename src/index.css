@@ -120,6 +120,8 @@ li {
   align-content: center;
   text-decoration: none;
   padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer li,
@@ -229,7 +231,7 @@ body {
 
 /* PORTFOLIO/PROJECT STYLES */
 .portfolio-container {
-  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .portfolio-list {
